@@ -1,21 +1,62 @@
 # Proyecto Final de Python
 
+Este repositorio contiene el proyecto final de Python donde se realizaron todos los pasos manuales para crear un entorno virtual, usar Git y subir el proyecto a GitHub, tal como indica la consigna.
+
+---
+
 ## Pasos realizados
 
-1. mkdir python-final  
-2. cd python-final  
-3. git init  
-4. touch finales.py  
-5. code .  
-6. python -V  
-7. python3 -m venv venv  
-8. source venv/bin/activate  
-9. python3 -m pip install --upgrade pip  
-10. git add .  
-11. git commit -m "Primer commit"  
-12. git remote add origin ...  
-13. git push -u origin main  
+```bash
+# Crear la carpeta del proyecto y entrar en ella
+mkdir python-final
+cd python-final
 
-## ¿Qué es pip y por qué se actualiza?
+# Iniciar un repositorio Git
+git init
 
-pip es el gestor de paquetes de Python. Sirve para instalar librerías que no vienen con Python por defecto. Se actualiza para asegurar compatibilidad y acceso a las últimas versiones de librerías.
+# Crear el archivo principal de Python
+touch finales.py
+
+# Abrir Visual Studio Code en la carpeta actual
+code .
+
+# Verificar la versión de Python instalada
+python -V
+# o
+python3 -V
+
+# Crear un entorno virtual para aislar dependencias
+python3 -m venv venv
+
+# Activar el entorno virtual
+# En Linux o Git Bash:
+source venv/bin/activate
+
+# En Windows (CMD o PowerShell):
+venv\Scripts\activate
+
+# Actualizar el gestor de paquetes pip
+python3 -m pip install --upgrade pip
+
+# Agregar todos los archivos al repositorio local
+git add .
+
+# Hacer el primer commit con un mensaje descriptivo
+git commit -m "Primer commit"
+
+# Conectar el repositorio local con el remoto en GitHub
+git remote add origin https://github.com/ExequielDev13/python-final.git
+
+# Subir los cambios al repositorio remoto en la rama main
+git push -u origin main
+
+
+¿Qué es pip y por qué se actualiza?
+pip es el gestor de paquetes de Python. Permite instalar, actualizar y desinstalar librerías y paquetes externos que no vienen incluidos por defecto con Python, como por ejemplo Flask, Requests o Pandas.
+
+Actualizar pip es importante para contar con la versión más reciente, que incluye mejoras, correcciones de errores y compatibilidad con las últimas versiones de paquetes. Esto ayuda a evitar problemas durante la instalación o uso de librerías.
+
+Autor
+Exequiel Abraham
+Fecha: Junio 2025
+GitHub: ExequielDev13
